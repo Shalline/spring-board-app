@@ -8,10 +8,11 @@ mybatis:
 server:
   port: 8080
   servlet:
-    context-path: /ch09
+    context-path: /sboard
 spring:
   application:
-    name: ch09
+    version: 0.0.1
+    name: sboard
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     password: akdb*0192
