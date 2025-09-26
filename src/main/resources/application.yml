@@ -1,0 +1,35 @@
+logging:
+  file:
+    name: log/sboard.log
+  level:
+    root: info
+mybatis:
+  mapper-locations: classpath:mappers/**/*.xml
+server:
+  port: 8080
+  servlet:
+    context-path: /ch09
+spring:
+  application:
+    name: ch09
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: akdb*0192
+    url: jdbc:oracle:thin:@//3.35.196.182:1522/XEPDB1
+    username: jinjinlove
+  devtools:
+    livereload:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+jwt:
+  issuer: machinemayou@gmail.com
+  secret: 6A127BDC817E959922A884672859801!!
