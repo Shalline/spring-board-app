@@ -11,7 +11,7 @@ server:
     context-path: /sboard
 spring:
   application:
-    version: 0.0.1
+    version: ${version}
     name: sboard
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
@@ -30,7 +30,8 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
-
-jwt:
-  issuer: machinemayou@gmail.com
-  secret: 6A127BDC817E959922A884672859801!!
+  security:
+    user:
+      name: user
+      password: 1234
+      roles: ADMIN
